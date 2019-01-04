@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Weapons -->
+    <string-array name="Weapons_Table_name">
+
+        <item>TABLE_WEAPONS_SWORDS</item>
+        <item>TABLE_WEAPONS_BOW</item>
+        <item>TABLE_WEAPONS_CROSSBOW</item>
+        <item>TABLE_WEAPONS_MAGICSTAFFS</item>
+        <item>TABLE_WEAPONS_AXES</item>
+
+    </string-array>
+
+    <string-array name="Weapons_type_name">
+
+        <item>Sword</item>
+        <item>Bow</item>
+        <item>CrossBow</item>
+        <item>MagicsStaff</item>
+        <item>Axe</item>
+
+    </string-array>
+
+    <string name="Weapons_type_1">Weapons</string>
+ <!--     End                  -->
+
+    <!-- Clothing-->
+    <string-array name="Clothing_Table_name">
+
+        <item>TABLE_CLOTHING_HELMETS</item>
+        <item>TABLE_CLOTHING_ARMOURS</item>
+        <item>TABLE_CLOTHING_BOOTS</item>
+        <item>TABLE_CLOTHING_RINGS</item>
+        <item>TABLE_CLOTHING_NECKLACES</item>
+
+    </string-array>
+
+    <string-array name="Clothing_type_name">
+
+        <item>Helmet</item>
+        <item>Armour</item>
+        <item>Boot</item>
+        <item>Ring</item>
+        <item>Neckleces</item>
+
+    </string-array>
+
+    <string name="Clothing_type_1">Clothing</string>
+    <!--     End                  -->
+
+    <!-- Chests -->
+    <string-array name="Chests_Table_name">
+
+        <item>TABLE_CHESTS_CHESTS</item>
+        <item>TABLE_CHESTS_KEYS</item>
+
+    </string-array>
+
+    <string-array name="Chests_type_name">
+
+        <item>Chest</item>
+        <item>Key</item>
+
+    </string-array>
+
+    <string name="Chests_type_1">Chest</string>
+    <!--     End                  -->
+
+
+</resources>

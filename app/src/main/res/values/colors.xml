@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#571b1e</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorbackActivity">#696969</color>
+    <color name="colorbuttonMain">#a9a9a9</color>
+    <color name="colorstatusbar">#b43e3a</color>
+    <color name="colorstatusbar1">#e8d365</color>
+    <color name="primary_device_default_dark">#ac2020</color>
+    <color name="colortexttoolbatmain">#262424</color>
+
+    <color name="white">#bdb8b8</color>
+
+</resources>

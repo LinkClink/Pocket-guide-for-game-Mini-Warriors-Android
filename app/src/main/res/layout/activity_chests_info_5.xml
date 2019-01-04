@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackActivity"
+    >
+
+    <ImageView
+        android:id="@+id/imageview_chests"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/textview_chests_name_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/alegreya_black"
+        android:text="Name: "
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/textview_chests_type_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/colorstatusbar"
+        android:fontFamily="@font/alegreya_black"
+        android:text="Type: "
+        android:textSize="18dp"
+        />
+
+    <ListView
+        android:id="@+id/listview_chests_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorbackActivity"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="120dp"
+        android:background="@color/colorbuttonMain"
+        >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/button_include_items_1"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/chest_info_button_shape"
+        android:text="Includes items"
+        android:fontFamily="@font/alegreya_black"
+        />
+
+    <include layout="@layout/layout_toolbar1_appname_all"></include>
+    <include layout="@layout/layout_toolbar2_dataver_all"></include>
+
+</RelativeLayout>
