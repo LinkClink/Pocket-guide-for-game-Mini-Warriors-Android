@@ -65,7 +65,9 @@ public class ItemsMenuActivity_2 extends AppCompatActivity
 
     public void menu_skill_items()
     {
-       CodeErrNotWork.showToast(getApplicationContext());
+       Intent intent = new Intent(ItemsMenuActivity_2.this , SkillsItemsMemuActivity_3.class);
+       startActivityForResult(intent,1);
+        overridePendingTransition(R.anim.animation_activity_standart_1,R.anim.animation_activity_standart_1);
     }
 
     public void menu_money()
