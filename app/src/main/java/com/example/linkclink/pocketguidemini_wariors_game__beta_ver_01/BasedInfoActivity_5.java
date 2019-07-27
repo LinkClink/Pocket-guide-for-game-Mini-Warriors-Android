@@ -16,13 +16,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 // Strona opisu dla ubrania i amunicji
-public class WeaponsClothingInfoActivity_5 extends AppCompatActivity
+public class BasedInfoActivity_5 extends AppCompatActivity
 
 {
     private DataBaseSqlHelper dbHelper;
     private SQLiteDatabase database;
 
     Bundle arguments;
+    String request_code;
 
     private String table_name;
     private String button_id;
@@ -34,12 +35,15 @@ public class WeaponsClothingInfoActivity_5 extends AppCompatActivity
     private TextView textView_type;
 
     // Strings data sql
-    String[] list_names = {"Hitpoints: ","Attack: ","Defence: ","Luck: ","Dodge: ","Stars: ","Price: "};
+    String[] list_names = {"Hit-points: ","Attack: ","Defence: ","Luck: ","Dodge: ","Stars: ","Price: "};
+    String[] list_names_1 = {"Price: " , "Legion shop price: " , "Use by upgrade heroes skills level: "};
 
     ListView list1;
 
     int i;
-    int a=2;
+    int charAt =0;
+
+    int a = 2;
 
     // Link to icon
     private int drawable_icon_link;
@@ -49,7 +53,7 @@ public class WeaponsClothingInfoActivity_5 extends AppCompatActivity
     {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_weaponscloting_info_5);
+        setContentView(R.layout.activity_based_info_5);
 
         // For DB connect
         dbHelper = new DataBaseSqlHelper(this);
@@ -83,6 +87,8 @@ public class WeaponsClothingInfoActivity_5 extends AppCompatActivity
         table_name = arguments.get("table_name").toString();
         button_id = arguments.get("button_id").toString();
         type = arguments.get("type_1").toString();
+        request_code = arguments.get("request_code").toString();
+
 
         imageView_icon = (ImageView) findViewById(R.id.imageview_weap_cloth);
 
@@ -92,12 +98,13 @@ public class WeaponsClothingInfoActivity_5 extends AppCompatActivity
         Cursor cursor_data = database.rawQuery(" SELECT * FROM " + table_name +" WHERE id= " + button_id , null);
         cursor_data.moveToFirst();
 
+
         // Icon
-        drawable_icon_link = getResources().getIdentifier(cursor_data.getString(9), "drawable", getPackageName());
+        drawable_icon_link = getResources().getIdentifier(cursor_data.getString(charAt=Integer.parseInt(Character.toString(request_code.charAt(0)))), "drawable", getPackageName());
         imageView_icon.setImageResource(drawable_icon_link);
 
         // Name
-        textView_name.setText("Name: "+cursor_data.getString(1));
+        textView_name.setText("Name: "+cursor_data.getString(charAt=Integer.parseInt(Character.toString(request_code.charAt(1)))));
 
         // Type
         textView_type.setText("Type: "+type);
@@ -106,9 +113,24 @@ public class WeaponsClothingInfoActivity_5 extends AppCompatActivity
 
         list1 = (ListView) findViewById(R.id.listview_weaponcloth);
 
-       for( i =0;i<=6;i++)
+        charAt = Integer.parseInt(Character.toString(request_code.charAt(2)));
+
+       for( i =0 ; i<=charAt ; i++ )
        {
-           arr_1.add(list_names[i] + cursor_data.getString(a));
+           switch (request_code)
+           {
+               case "512":
+               {
+                   arr_1.add(list_names_1[i] + cursor_data.getString(a));
+                   break;
+               }
+               case "916":
+               {
+                   arr_1.add(list_names[i] + cursor_data.getString(a));
+                   break;
+               }
+           }
+
            a++;
        }
 
