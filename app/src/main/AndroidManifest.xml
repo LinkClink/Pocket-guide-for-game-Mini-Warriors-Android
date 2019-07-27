@@ -62,7 +62,7 @@
 
         <!-- Button 2 to step 1-2 to step 1-5 and anything -->
         <activity
-            android:name=".WeaponsClothingInfoActivity_5"
+            android:name=".BasedInfoActivity_5"
             android:screenOrientation="portrait" />
 
         <!-- Button 2 to step 3 -->
@@ -80,11 +80,10 @@
             android:name=".KeysInfoActivity_5"
             android:screenOrientation="portrait" />
 
-        <!-- Button 2 step 3 step 2 -->
+        <!-- Button 2 step 4 step 1 -->
         <activity
             android:name=".SkillsItemsMemuActivity_3"
             android:screenOrientation="portrait" />
-
 
         <meta-data
             android:name="preloaded_fonts"
