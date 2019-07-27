@@ -24,7 +24,6 @@ public class ChestsMenuActivuty_3 extends AppCompatActivity
     String type_1;
 
     int resID;
-    String hh ="Chest";
 
     @Override
     public void onCreate(Bundle savedInstanceState)
