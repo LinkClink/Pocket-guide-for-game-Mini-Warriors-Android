@@ -1,9 +1,9 @@
 <resources>
 
     <!-- PROGRAM INFO -->
-    <string name="app_name">PocketGuide for Mini Wariors</string>
-    <string name="last_update_info">Last update 2019-26-09</string>
-    <string name="version_info">Version 0.2.0 beta</string>
+    <string name="app_name">PocketGuide for Mini Warriors</string>
+    <string name="last_update_info">Last update 2018-27-10</string>
+    <string name="version_info">Version 0.1.0 beta</string>
 
     <!-- Credits layout -->
     <string name="developer_info">Created by LinkClink</string>
