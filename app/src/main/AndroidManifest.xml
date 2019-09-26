@@ -67,6 +67,7 @@
 
         <!-- Button 2 to step 3 -->
 
+
         <!-- Button 2 step 3 step 1 -->
         <activity
             android:name=".ChestsInfoActivity_5"
@@ -82,21 +83,25 @@
             android:name=".SkillsItemsMenuActivity_3"
             android:screenOrientation="portrait" />
 
+        <!-- Button 2 step 5 -->
+        <activity
+            android:name=".MoneyInfoActivity_3"
+            android:screenOrientation="portrait">
+        </activity>
+
+
         <!-- Button 2 step 3 -->
-        <activity android:name=".HeroesListActivity_4"
-            android:screenOrientation="portrait"
-            />
-
-
         <activity
             android:name=".ChestsMenuActivity_3"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".HeroesListActivity_4"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
 
     </application>
 

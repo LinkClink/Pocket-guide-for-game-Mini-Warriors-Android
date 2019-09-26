@@ -80,7 +80,7 @@ public class ItemsListActivity_4 extends AppCompatActivity
 
         // Font for buttons
         Typeface typeface = ResourcesCompat.getFont(getApplicationContext(), R.font.the_girl_next_door);
-        Drawable drawable_backround= getResources().getDrawable(R.drawable.main_buttons_selector);
+        Drawable drawable_backround = getResources().getDrawable(R.drawable.main_buttons_selector);
         LinearLayout list_linearlay = (LinearLayout)findViewById(R.id.line_sc) ;
 
         /// Layout settings
@@ -97,7 +97,7 @@ public class ItemsListActivity_4 extends AppCompatActivity
         while (!cursor_name.isAfterLast())
         {
             //// Buttons Setings
-            final Button button = new Button(this);
+            Button button = new Button(this);
 
             // size
             button.setWidth(270);

@@ -7,31 +7,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <include layout="@layout/layout_toolbar1_appname_all"></include>
     <include layout="@layout/layout_toolbar2_dataver_all"></include>
 
