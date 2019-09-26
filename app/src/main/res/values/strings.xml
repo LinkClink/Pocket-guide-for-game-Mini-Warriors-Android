@@ -10,6 +10,16 @@
     <string name="started_project_info">Started: 2018-20-10</string>
     <string name="realese_project_info">Release: 2018-00-00</string>
     <string name="text_layout_credits">This application has \n been created only on the platform Android
-                                        and by using Idea Platform "Android Studio \n All rights reserved"</string>
+                                        and by using Idea Platform "Android Studio \n\n All rights reserved"</string>
+    <string name="title_activity_money_info_3">MoneyInfoActivity_3</string>
+
+    <!-- MoneyInfo layout -->
+    <string name="money_1">GOLD</string>
+    <string name="money_2">CRYSTAL</string>
+    <string name="money_info_1">GOLD:\nMost of the game uses gold, this is the main payment unit, both for leveling the character and for shopping in the store.</string>
+    <string name="money_info_2">CRYSTAL:\nCrystals is a donut currency, you can get it by buying for real money or for completing quests and entering the game. They have a high price, unlike gold, and are also used when buying.</string>
+
+
+
 
 </resources>

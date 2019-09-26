@@ -66,5 +66,20 @@
     <string name="Chests_type_1">Chest</string>
     <!--     End                  -->
 
+    <!-- Scrolls -->
+    <string-array name="Scroll_Table_name">
+
+        <item>TABLE_SKILLITEMS_SCROLLS</item>
+
+    </string-array>
+
+    <string-array name="Scroll_type_name">
+
+        <item>Scroll</item>
+
+    </string-array>
+
+    <string name="Scrolls_type_1">Scroll</string>
+    <!-- End -->
 
 </resources>

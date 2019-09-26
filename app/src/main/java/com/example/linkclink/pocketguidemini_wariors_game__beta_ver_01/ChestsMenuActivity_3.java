@@ -8,7 +8,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 // Menu armour laczenie do roznych tabeli
-public class ChestsMenuActivuty_3 extends AppCompatActivity
+public class ChestsMenuActivity_3 extends AppCompatActivity
 
 {
     int[] item_type = {2,3};
@@ -24,7 +24,6 @@ public class ChestsMenuActivuty_3 extends AppCompatActivity
     String type_1;
 
     int resID;
-    String hh ="Chest";
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -52,9 +51,10 @@ public class ChestsMenuActivuty_3 extends AppCompatActivity
                 @Override
                 public void onClick(View v)
                 {
-                    intent = new Intent(ChestsMenuActivuty_3.this, ItemsListActivity_4.class);
+                            intent = new Intent(ChestsMenuActivity_3.this, ItemsListActivity_4.class);
                     intent.putExtra("table_name", table_names[v.getId()]);
                     intent.putExtra("type_1", type_1 + "," + type_names[v.getId()]);
+                    intent.putExtra("request_code",0);
 
                     if (type_names[v.getId()].equals("Chest")) intent.putExtra("item_type", item_type[0]);
                     else intent.putExtra("item_type", item_type[1]);

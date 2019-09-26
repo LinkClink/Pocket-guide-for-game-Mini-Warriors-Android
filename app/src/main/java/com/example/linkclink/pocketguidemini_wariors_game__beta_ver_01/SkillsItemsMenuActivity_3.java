@@ -1,25 +1,23 @@
 package com.example.linkclink.pocketguidemini_wariors_game__beta_ver_01;
 
 import android.content.Intent;
-import android.content.res.Resources;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
-// Menu wyboru amunicji
-public class WeaponsMenuActivity_3 extends AppCompatActivity
-
+public class SkillsItemsMenuActivity_3 extends AppCompatActivity
 {
-    int item_type=1;
-    String ac_request_code = "916";
+
+    int item_type = 1;
+    String ac_request_code = "512";
 
     Intent intent;
 
     int i=0;
 
-    Button[] buttons = new Button[5];
+    Button[] buttons = new Button[1];
 
     String[] table_names;
     String[] type_names;
@@ -32,19 +30,20 @@ public class WeaponsMenuActivity_3 extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_weapons_menu_3);
+        setContentView(R.layout.activity_skills_items_memu_3);
+
         buttons_realisations();
     }
 
     public void buttons_realisations()
     {
-       table_names = getResources().getStringArray(R.array.Weapons_Table_name);
-       type_names = getResources().getStringArray(R.array.Weapons_type_name);
-       type_1 = getResources().getString(R.string.Weapons_type_1);
+        table_names = getResources().getStringArray(R.array.Scroll_Table_name);
+        type_names = getResources().getStringArray(R.array.Scroll_type_name);
+        type_1 = getResources().getString(R.string.Scrolls_type_1);
 
-        for(i=0;i<5;i++)
+        for(i=0;i<1;i++)
         {
-            resID = getResources().getIdentifier("menuweapons_button_"+i, "id", getPackageName());
+            resID = getResources().getIdentifier("menuscrolls_button_" + i, "id", getPackageName());
             buttons[i] = (Button) findViewById(resID);
             buttons[i].setId(i);
             buttons[i].setOnClickListener(new View.OnClickListener()
@@ -52,9 +51,9 @@ public class WeaponsMenuActivity_3 extends AppCompatActivity
                 @Override
                 public void onClick(View v)
                 {
-                    intent = new Intent(WeaponsMenuActivity_3.this, ItemsListActivity_4.class);
+                    intent = new Intent(SkillsItemsMenuActivity_3.this, ItemsListActivity_4.class);
                     intent.putExtra("table_name",table_names[v.getId()]);
-                    intent.putExtra("type_1",type_1+","+type_names[v.getId()]);
+                    intent.putExtra("type_1",type_1);
                     intent.putExtra("item_type",item_type);
                     intent.putExtra("request_code",ac_request_code);
                     startActivityForResult(intent,1);
@@ -62,5 +61,7 @@ public class WeaponsMenuActivity_3 extends AppCompatActivity
                 }
             });
         }
+
     }
+
 }
