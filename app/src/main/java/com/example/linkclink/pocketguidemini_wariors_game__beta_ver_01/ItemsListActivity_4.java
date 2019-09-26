@@ -153,6 +153,10 @@ public class ItemsListActivity_4 extends AppCompatActivity
                             overridePendingTransition(R.anim.animation_activity_standart_1, R.anim.animation_activity_standart_1);
                             break;
                         }
+                        default:
+                        {
+                            break;
+                        }
 
                     }
                 }

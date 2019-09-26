@@ -66,9 +66,6 @@
             android:screenOrientation="portrait" />
 
         <!-- Button 2 to step 3 -->
-        <activity
-            android:name=".ChestsMenuActivuty_3"
-            android:screenOrientation="portrait" />
 
         <!-- Button 2 step 3 step 1 -->
         <activity
@@ -82,12 +79,24 @@
 
         <!-- Button 2 step 4 step 1 -->
         <activity
-            android:name=".SkillsItemsMemuActivity_3"
+            android:name=".SkillsItemsMenuActivity_3"
             android:screenOrientation="portrait" />
+
+        <!-- Button 2 step 3 -->
+        <activity android:name=".HeroesListActivity_4"
+            android:screenOrientation="portrait"
+            />
+
+
+        <activity
+            android:name=".ChestsMenuActivity_3"
+            android:screenOrientation="portrait"/>
+
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
 
     </application>
 

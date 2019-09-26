@@ -58,14 +58,14 @@ public class ItemsMenuActivity_2 extends AppCompatActivity
 
     public void menu_chests()
     {
-        Intent intent = new Intent(ItemsMenuActivity_2.this, ChestsMenuActivuty_3.class);
+        Intent intent = new Intent(ItemsMenuActivity_2.this, ChestsMenuActivity_3.class);
         startActivityForResult(intent,1);
         overridePendingTransition(R.anim.animation_activity_standart_1,R.anim.animation_activity_standart_1);
     }
 
     public void menu_skill_items()
     {
-       Intent intent = new Intent(ItemsMenuActivity_2.this , SkillsItemsMemuActivity_3.class);
+       Intent intent = new Intent(ItemsMenuActivity_2.this , SkillsItemsMenuActivity_3.class);
        startActivityForResult(intent,1);
         overridePendingTransition(R.anim.animation_activity_standart_1,R.anim.animation_activity_standart_1);
     }
