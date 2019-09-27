@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
-// Menu armour laczenie do roznych tabeli
+// Armor menu to link to different tables
 public class ChestsMenuActivity_3 extends AppCompatActivity
 
 {

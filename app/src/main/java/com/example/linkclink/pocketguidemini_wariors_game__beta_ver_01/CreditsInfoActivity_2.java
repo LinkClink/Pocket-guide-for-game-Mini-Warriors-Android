@@ -8,7 +8,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
-// Informacja o programie
+// Information about the program
 public class CreditsInfoActivity_2 extends AppCompatActivity
 {
     TextView textView_1;

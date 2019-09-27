@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-// Strona opisu dla ubrania i amunicji
+// Description page for clothing and ammunition
 public class BasedInfoActivity_5 extends AppCompatActivity
 
 {

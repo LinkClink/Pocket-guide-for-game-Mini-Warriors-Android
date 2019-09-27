@@ -16,7 +16,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import java.io.IOException;
 
-// Lista dla wszystkich rzecziej w programie
+// A list for items (all)
 public class ItemsListActivity_4 extends AppCompatActivity
 
 {
@@ -96,7 +96,7 @@ public class ItemsListActivity_4 extends AppCompatActivity
 
         while (!cursor_name.isAfterLast())
         {
-            //// Buttons Setings
+            //// Buttons Settings
             Button button = new Button(this);
 
             // size

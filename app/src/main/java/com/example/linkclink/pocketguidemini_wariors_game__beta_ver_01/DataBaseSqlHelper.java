@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-// Laczenie do bazy dannych (metody pobrania dznych)
+// Connecting to the database (daytime collection methods)
 public class DataBaseSqlHelper extends SQLiteOpenHelper
 {
     // Name of DataBase for Items
