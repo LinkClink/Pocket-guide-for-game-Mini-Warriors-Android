@@ -10,7 +10,7 @@
     <string name="started_project_info">Started: 2018-20-10</string>
     <string name="realese_project_info">Release: 2018-00-00</string>
     <string name="text_layout_credits">This application has \n been created only on the platform Android
-                                        and by using Idea Platform "Android Studio \n\n All rights reserved"</string>
+                                        and by using Idea Platform "Android Studio. \n\n All rights reserved."</string>
     <string name="title_activity_money_info_3">MoneyInfoActivity_3</string>
 
     <!-- MoneyInfo layout -->
