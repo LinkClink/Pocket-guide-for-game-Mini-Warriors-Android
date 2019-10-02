@@ -2,11 +2,11 @@ package com.example.linkclink.pocketguidemini_wariors_game__beta_ver_01;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
 
-public class MoneyInfoActivity_3 extends Activity
+public class MoneyInfoActivity_3 extends AppCompatActivity
 {
-    @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
