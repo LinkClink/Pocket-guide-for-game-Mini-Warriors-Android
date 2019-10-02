@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
-// Menu wyboru amunicji
+// Ammo selection menu
 public class WeaponsMenuActivity_3 extends AppCompatActivity
 
 {

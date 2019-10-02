@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-// Strona opisu kluczy(ow)
+// Description page key(s)
 public class KeysInfoActivity_5 extends AppCompatActivity
 {
     private DataBaseSqlHelper dbHelper;

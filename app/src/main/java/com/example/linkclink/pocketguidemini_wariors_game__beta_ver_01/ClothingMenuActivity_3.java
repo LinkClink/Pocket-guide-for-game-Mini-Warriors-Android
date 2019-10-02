@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
-// Menu dla wyboru typy amunicji
+// Menu for choosing the ammo types
 public class ClothingMenuActivity_3 extends AppCompatActivity
 
 {

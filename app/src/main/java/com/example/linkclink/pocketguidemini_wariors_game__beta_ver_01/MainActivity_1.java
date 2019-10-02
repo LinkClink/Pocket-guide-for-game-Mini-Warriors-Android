@@ -9,7 +9,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
-// Glowne menu programu
+// Main menu
 public class MainActivity_1 extends AppCompatActivity
 {
     // Buttons Main menu declaration

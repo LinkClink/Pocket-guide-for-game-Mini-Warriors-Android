@@ -2,13 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <Toolbar
         android:id="@+id/toolbar_appname"
-        android:background="@color/colorstatusbar1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:background="@color/colorstatusbar1"
+
         >
 
         <TextView
