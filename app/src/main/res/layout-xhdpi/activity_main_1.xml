@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackActivity"
+    tools:context=".MainActivity_1"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/tableRow1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/main_button_1"
+                android:layout_height="55dp"
+                android:layout_marginBottom="7dp"
+                android:onClick="onClick"
+                android:background="@drawable/main_buttons_selector"
+                android:fontFamily="@font/the_girl_next_door"
+                android:text="Heroes"
+                android:textSize="26sp"
+                />
+
+            <Button
+                android:id="@+id/main_button_2"
+                android:layout_height="55dp"
+                android:onClick="onClick"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/main_buttons_selector"
+                android:fontFamily="@font/the_girl_next_door"
+                android:text="Items"
+                android:textSize="26sp"
+                />
+
+            <Button
+                android:id="@+id/main_button_3"
+                android:layout_height="55dp"
+                android:onClick="onClick"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/main_buttons_selector"
+                android:fontFamily="@font/the_girl_next_door"
+                android:text="Skils"
+                android:textSize="26sp"
+                />
+
+            <Button
+                android:id="@+id/main_button_4"
+                android:layout_height="55dp"
+                android:onClick="onClick"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/main_buttons_selector"
+                android:fontFamily="@font/the_girl_next_door"
+                android:text="Academy"
+                android:textSize="26sp"
+                />
+
+
+            <Button
+                android:id="@+id/main_button_5"
+                android:layout_height="55dp"
+                android:onClick="onClick"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/main_buttons_selector"
+                android:fontFamily="@font/the_girl_next_door"
+                android:text="Credits"
+                android:textSize="26sp"
+                />
+
+            <Button
+                android:id="@+id/main_button_6"
+                android:layout_height="55dp"
+                android:onClick="onClick"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/main_button_quit_shape_selector"
+                android:fontFamily="@font/the_girl_next_door"
+                android:text="Quit"
+                android:textSize="26sp"
+                />
+        </TableLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_toolbar1_appname_all"></include>
+    <include layout="@layout/layout_toolbar2_dataver_all"></include>
+
+</RelativeLayout>
