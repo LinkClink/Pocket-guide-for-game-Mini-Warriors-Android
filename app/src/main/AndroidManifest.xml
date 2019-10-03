@@ -4,7 +4,12 @@
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
-    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"  android:anyDensity="true" ></supports-screens>
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
 
     <application
         android:allowBackup="true"
@@ -57,22 +62,42 @@
 
         <!-- Button 2 to step 1-2 to step 1-5 and anything -->
         <activity
-            android:name=".WeaponsClothingInfoActivity_5"
+            android:name=".BasedInfoActivity_5"
             android:screenOrientation="portrait" />
 
         <!-- Button 2 to step 3 -->
-        <activity
-            android:name=".ChestsMenuActivuty_3"
-            android:screenOrientation="portrait" />
+
 
         <!-- Button 2 step 3 step 1 -->
         <activity
             android:name=".ChestsInfoActivity_5"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
 
         <!-- Button 2 step 3 step 2 -->
-        <activity android:name=".KeysInfoActivity_5"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".KeysInfoActivity_5"
+            android:screenOrientation="portrait" />
+
+        <!-- Button 2 step 4 step 1 -->
+        <activity
+            android:name=".SkillsItemsMenuActivity_3"
+            android:screenOrientation="portrait" />
+
+        <!-- Button 2 step 5 -->
+        <activity
+            android:name=".MoneyInfoActivity_3"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <!-- Button 2 step 3 -->
+        <activity
+            android:name=".ChestsMenuActivity_3"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".HeroesListActivity_4"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="preloaded_fonts"

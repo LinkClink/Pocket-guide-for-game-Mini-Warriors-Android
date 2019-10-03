@@ -18,7 +18,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-// Strona Informacji dla broni
+// Information page for weapons
 public class ChestsInfoActivity_5 extends AppCompatActivity
 {
     private DataBaseSqlHelper dbHelper;

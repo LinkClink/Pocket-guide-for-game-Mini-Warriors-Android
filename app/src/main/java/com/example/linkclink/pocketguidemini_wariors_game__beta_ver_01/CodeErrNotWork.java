@@ -4,7 +4,7 @@ import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
-// Funkcja dla wersji 0.1 (opis niedzialajacych funkcji)
+// Function for version 0.1 (description of broken functions)
 public class CodeErrNotWork extends AppCompatActivity
 
 {

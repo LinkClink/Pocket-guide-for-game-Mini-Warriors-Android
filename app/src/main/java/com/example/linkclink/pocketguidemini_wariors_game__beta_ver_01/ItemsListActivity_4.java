@@ -16,7 +16,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import java.io.IOException;
 
-// Lista dla wszystkich rzecziej w programie
+// A list for items (all)
 public class ItemsListActivity_4 extends AppCompatActivity
 
 {
@@ -34,7 +34,9 @@ public class ItemsListActivity_4 extends AppCompatActivity
     int i=1;
 
     String type;
+    String ac_request_code;
     int item_type_activity;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -73,11 +75,12 @@ public class ItemsListActivity_4 extends AppCompatActivity
         arguments = getIntent().getExtras();
         intent_arg_table = arguments.get("table_name").toString();
         item_type_activity = arguments.getInt("item_type");
+        ac_request_code = arguments.get("request_code").toString();
         type = arguments.get("type_1").toString();
 
         // Font for buttons
         Typeface typeface = ResourcesCompat.getFont(getApplicationContext(), R.font.the_girl_next_door);
-        Drawable drawable_backround= getResources().getDrawable(R.drawable.main_buttons_selector);
+        Drawable drawable_backround = getResources().getDrawable(R.drawable.main_buttons_selector);
         LinearLayout list_linearlay = (LinearLayout)findViewById(R.id.line_sc) ;
 
         /// Layout settings
@@ -93,8 +96,8 @@ public class ItemsListActivity_4 extends AppCompatActivity
 
         while (!cursor_name.isAfterLast())
         {
-            //// Buttons Setings
-            final Button button = new Button(this);
+            //// Buttons Settings
+            Button button = new Button(this);
 
             // size
             button.setWidth(270);
@@ -114,13 +117,14 @@ public class ItemsListActivity_4 extends AppCompatActivity
                 {
                     switch (item_type_activity)
                     {
-                        // Weapons Clothing
+                        // Weapons , Clothing , Scrolls
                         case 1:
                         {
-                            Intent intent = new Intent(ItemsListActivity_4.this, WeaponsClothingInfoActivity_5.class);
+                            Intent intent = new Intent(ItemsListActivity_4.this, BasedInfoActivity_5.class);
                             intent.putExtra("table_name",intent_arg_table);
                             intent.putExtra("button_id",v.getId());
                             intent.putExtra("type_1",type);
+                            intent.putExtra("request_code",ac_request_code);
                             startActivityForResult(intent, 1);
                             overridePendingTransition(R.anim.animation_activity_standart_1, R.anim.animation_activity_standart_1);
                             break;
@@ -149,6 +153,11 @@ public class ItemsListActivity_4 extends AppCompatActivity
                             overridePendingTransition(R.anim.animation_activity_standart_1, R.anim.animation_activity_standart_1);
                             break;
                         }
+                        default:
+                        {
+                            break;
+                        }
+
                     }
                 }
             });

@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
-// Menu wyboru typy amunicji
+// Ammo type selection menu
 public class ItemsMenuActivity_2 extends AppCompatActivity
 
 {
@@ -58,19 +58,23 @@ public class ItemsMenuActivity_2 extends AppCompatActivity
 
     public void menu_chests()
     {
-        Intent intent = new Intent(ItemsMenuActivity_2.this, ChestsMenuActivuty_3.class);
+        Intent intent = new Intent(ItemsMenuActivity_2.this, ChestsMenuActivity_3.class);
         startActivityForResult(intent,1);
         overridePendingTransition(R.anim.animation_activity_standart_1,R.anim.animation_activity_standart_1);
     }
 
     public void menu_skill_items()
     {
-       CodeErrNotWork.showToast(getApplicationContext());
+       Intent intent = new Intent(ItemsMenuActivity_2.this , SkillsItemsMenuActivity_3.class);
+       startActivityForResult(intent,1);
+        overridePendingTransition(R.anim.animation_activity_standart_1,R.anim.animation_activity_standart_1);
     }
 
     public void menu_money()
     {
-        CodeErrNotWork.showToast(getApplicationContext());
+        Intent intent = new Intent(ItemsMenuActivity_2.this , MoneyInfoActivity_3.class);
+        startActivityForResult(intent,1);
+        overridePendingTransition(R.anim.animation_activity_standart_1,R.anim.animation_activity_standart_1);
     }
 
 }

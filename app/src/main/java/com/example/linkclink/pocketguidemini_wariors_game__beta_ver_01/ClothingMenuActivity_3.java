@@ -7,11 +7,12 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
-// Menu dla wyboru typy amunicji
+// Menu for choosing the ammo types
 public class ClothingMenuActivity_3 extends AppCompatActivity
 
 {
     int item_type = 1;
+    String ac_request_code = "916";
 
     Intent intent;
 
@@ -55,6 +56,7 @@ public class ClothingMenuActivity_3 extends AppCompatActivity
                     intent.putExtra("table_name", table_names[v.getId()]);
                     intent.putExtra("type_1", type_1 + "," + type_names[v.getId()]);
                     intent.putExtra("item_type", item_type);
+                    intent.putExtra("request_code",ac_request_code);
                     startActivityForResult(intent, 1);
                     overridePendingTransition(R.anim.animation_activity_standart_1, R.anim.animation_activity_standart_1);
                 }

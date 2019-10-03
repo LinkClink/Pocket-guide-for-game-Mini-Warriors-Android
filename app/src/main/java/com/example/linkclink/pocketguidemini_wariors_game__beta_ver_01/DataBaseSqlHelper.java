@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-// Laczenie do bazy dannych (metody pobrania dznych)
+// Connecting to the database (daytime collection methods)
 public class DataBaseSqlHelper extends SQLiteOpenHelper
 {
     // Name of DataBase for Items
@@ -19,7 +19,7 @@ public class DataBaseSqlHelper extends SQLiteOpenHelper
     private static String DB_PATH = "";
 
     // Versions DB (first ver 1)
-    private static final int DB_VERSION = 8;
+    private static final int DB_VERSION = 11;
 
     private SQLiteDatabase mDataBase;
     private final Context mContext;
