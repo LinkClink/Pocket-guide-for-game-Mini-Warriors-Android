@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackActivity"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        >
+
+        <TableLayout
+            android:id="@+id/tableRow1"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/menuchests_button_0"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/main_buttons_selector"
+                android:fontFamily="@font/the_girl_next_door"
+                android:text="Chests"
+                android:onClick="onClick"
+                android:textSize="30sp"
+                />
+
+            <Button
+                android:id="@+id/menuchests_button_1"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/main_buttons_selector"
+                android:fontFamily="@font/the_girl_next_door"
+                android:text="Keys"
+                android:textSize="30sp"
+                android:onClick="onClick"
+                />
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_toolbar1_appname_all"></include>
+    <include layout="@layout/layout_toolbar2_dataver_all"></include>
+
+</RelativeLayout>

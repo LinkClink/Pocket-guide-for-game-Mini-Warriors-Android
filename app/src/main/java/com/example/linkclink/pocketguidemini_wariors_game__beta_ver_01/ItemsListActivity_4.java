@@ -9,6 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Display;
 import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
@@ -36,7 +37,6 @@ public class ItemsListActivity_4 extends AppCompatActivity
     String type;
     String ac_request_code;
     int item_type_activity;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -85,7 +85,7 @@ public class ItemsListActivity_4 extends AppCompatActivity
 
         /// Layout settings
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-        layoutParams.setMargins(0, 40, 0, 0);
+        layoutParams.setMargins(0, getResources().getInteger(R.integer.set1), 0, 0);
 
         ///  Select SQL
         Cursor cursor_name = database.rawQuery(" SELECT * FROM " + intent_arg_table , null);
@@ -100,9 +100,9 @@ public class ItemsListActivity_4 extends AppCompatActivity
             Button button = new Button(this);
 
             // size
-            button.setWidth(270);
-            button.setHeight(60);
-            button.setTextSize(17);
+            button.setWidth(getResources().getInteger(R.integer.set2));
+            button.setHeight(getResources().getInteger(R.integer.set3));
+            button.setTextSize(getResources().getInteger(R.integer.set4));
 
             button.setTypeface(typeface);
             button.setGravity(Gravity.CENTER);
@@ -166,7 +166,7 @@ public class ItemsListActivity_4 extends AppCompatActivity
             icon_link = cursor_icon.getString(0);
             drawable_icon_link = getResources().getIdentifier(icon_link , "drawable", getPackageName());
             button.setCompoundDrawablesWithIntrinsicBounds(drawable_icon_link,0,0,0);
-            button.setPadding(18,0,0,0);
+            button.setPadding(getResources().getInteger(R.integer.set5),0,0,0);
             cursor_icon.moveToNext();
 
             // name

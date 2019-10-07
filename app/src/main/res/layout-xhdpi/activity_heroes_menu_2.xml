@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorbackActivity"
+    tools:context=".HeroesMenuActivity_2"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/tableRow1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/menuheroes_button_0"
+                android:layout_height="55dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/main_buttons_selector"
+                android:drawableTop="@drawable/menu_heroes_button_icon_4_2"
+                android:paddingTop="9dp"
+                android:onClick="onClick"
+
+                />
+
+            <Button
+                android:id="@+id/menuheroes_button_1"
+                android:layout_height="55dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/main_buttons_selector"
+                android:drawableTop="@drawable/menu_heroes_button_icon_3_2"
+                android:paddingTop="9dp"
+                android:onClick="onClick"
+
+                />
+
+            <Button
+                android:id="@+id/menuheroes_button_2"
+                android:layout_height="55dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/main_buttons_selector"
+                android:drawableTop="@drawable/menu_heroes_button_icon_2_2"
+                android:paddingTop="9dp"
+                android:onClick="onClick"
+
+                />
+
+            <Button
+                android:id="@+id/menuheroes_button_3"
+                android:layout_height="55dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/main_buttons_selector"
+                android:drawableTop="@drawable/menu_heroes_button_icon_1_2"
+                android:paddingTop="9dp"
+                android:onClick="onClick"
+
+                />
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_toolbar1_appname_all"></include>
+    <include layout="@layout/layout_toolbar2_dataver_all"></include>
+
+</RelativeLayout>
