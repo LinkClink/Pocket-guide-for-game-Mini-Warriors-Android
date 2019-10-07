@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="set1">20</integer>
+    <integer name="set2">250</integer>
+    <integer name="set3">55</integer>
+    <integer name="set4">15</integer>
+    <integer name="set5">15</integer>
+
+    <dimen name="button_w">250dp</dimen>
+
+
+</resources>
