@@ -16,7 +16,7 @@
 
         <LinearLayout
             android:id="@+id/line_sc"
-            android:layout_width="270dp"
+            android:layout_width="@dimen/button_w"
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
             android:orientation="vertical"
