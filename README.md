@@ -5,7 +5,7 @@ Pocket guide for Mini Warriors
 # Getting Started:
 You can open this project in your Android Studio also download **release.apk** and install on your smartphone.
 
-# Prerequisites
+# Prerequisites:
 * Android Studio [Download](https://developer.android.com/studio)
 
 # Running the tests:
@@ -16,12 +16,12 @@ You can open this project in your Android Studio also download **release.apk** a
 <img src="https://pp.userapi.com/c853520/v853520950/66539/093QnApX3AQ.jpg" width="300">
 <img src="https://pp.userapi.com/c849124/v849124950/1b3a88/CyvkHxMuqa0.jpg" width="300">
 
-## Built With
+## Built With:
 * XML
 * Java 9
 * SQLlite
 
-# Authors
+# Authors:
 - Yevhenii Andrushchenko (LinkClink)
 
 
