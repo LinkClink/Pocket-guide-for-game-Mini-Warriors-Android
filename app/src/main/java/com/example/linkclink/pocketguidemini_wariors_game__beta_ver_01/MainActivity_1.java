@@ -2,12 +2,10 @@ package com.example.linkclink.pocketguidemini_wariors_game__beta_ver_01;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.TextView;
 
 // Main menu
 public class MainActivity_1 extends AppCompatActivity
@@ -44,7 +42,6 @@ public class MainActivity_1 extends AppCompatActivity
         if(view == main_button_4) academy_menu();
         if(view == main_button_5) info_credits();
         if(view == main_button_6) quit();
-
     }
 
     public void menu_heroes()

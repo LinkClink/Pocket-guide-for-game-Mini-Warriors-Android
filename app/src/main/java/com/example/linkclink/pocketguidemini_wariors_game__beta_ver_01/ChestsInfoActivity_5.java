@@ -4,15 +4,12 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -57,22 +54,13 @@ public class ChestsInfoActivity_5 extends AppCompatActivity
         dbHelper = new DataBaseSqlHelper(this);
 
         try
-        {
-            dbHelper.updateDataBase();
-
-        }
+        { dbHelper.updateDataBase(); }
         catch (IOException mIOException)
-        {
-            throw new Error("UnableToUpdateDatabase");
-        }
+        { throw new Error("UnableToUpdateDatabase"); }
         try
-        {
-            database = dbHelper.getWritableDatabase();
-        }
+        { database = dbHelper.getWritableDatabase(); }
         catch (SQLException mSQLException)
-        {
-            throw mSQLException;
-        }
+        { throw mSQLException; }
 
         // Add informations to layout
         sql_data_to_info();
@@ -115,5 +103,6 @@ public class ChestsInfoActivity_5 extends AppCompatActivity
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,arr_1);
         list1.setAdapter(arrayAdapter);
+        cursor_data.close();
     }
 }

@@ -1,6 +1,5 @@
 package com.example.linkclink.pocketguidemini_wariors_game__beta_ver_01;
 
-
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;

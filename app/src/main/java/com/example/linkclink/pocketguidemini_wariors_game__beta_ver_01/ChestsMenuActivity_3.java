@@ -9,7 +9,6 @@ import android.widget.Button;
 
 // Armor menu to link to different tables
 public class ChestsMenuActivity_3 extends AppCompatActivity
-
 {
     int[] item_type = {2,3};
 

@@ -1,7 +1,6 @@
 package com.example.linkclink.pocketguidemini_wariors_game__beta_ver_01;
 
 import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -10,7 +9,6 @@ import android.widget.Button;
 
 // Ammo selection menu
 public class WeaponsMenuActivity_3 extends AppCompatActivity
-
 {
     int item_type=1;
     String ac_request_code = "916";

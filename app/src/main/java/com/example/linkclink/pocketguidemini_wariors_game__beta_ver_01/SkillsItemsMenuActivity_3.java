@@ -9,7 +9,6 @@ import android.widget.Button;
 
 public class SkillsItemsMenuActivity_3 extends AppCompatActivity
 {
-
     int item_type = 1;
     String ac_request_code = "512";
 
@@ -34,7 +33,6 @@ public class SkillsItemsMenuActivity_3 extends AppCompatActivity
 
         buttons_realisations();
     }
-
     public void buttons_realisations()
     {
         table_names = getResources().getStringArray(R.array.Scroll_Table_name);
@@ -61,7 +59,5 @@ public class SkillsItemsMenuActivity_3 extends AppCompatActivity
                 }
             });
         }
-
     }
-
 }

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/-Java-Android-studio-Pocket-guide-for-game-Mini-Warriors-.iml" filepath="$PROJECT_DIR$/-Java-Android-studio-Pocket-guide-for-game-Mini-Warriors-.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/-Java-Android-studio-Pocket-guide-for-game-Mini-Warriors-.iml" filepath="$PROJECT_DIR$/-Java-Android-studio-Pocket-guide-for-game-Mini-Warriors-.iml" group="-Java-Android-studio-Pocket-guide-for-game-Mini-Warriors-" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="-Java-Android-studio-Pocket-guide-for-game-Mini-Warriors-/app" />
     </modules>
   </component>
 </project>

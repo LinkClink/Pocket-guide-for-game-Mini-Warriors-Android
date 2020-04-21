@@ -6,7 +6,6 @@ import android.view.WindowManager;
 
 public class HeroesListActivity_4 extends AppCompatActivity
 {
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {

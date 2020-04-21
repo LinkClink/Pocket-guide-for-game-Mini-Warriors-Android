@@ -9,7 +9,6 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Display;
 import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
@@ -19,7 +18,6 @@ import java.io.IOException;
 
 // A list for items (all)
 public class ItemsListActivity_4 extends AppCompatActivity
-
 {
     private DataBaseSqlHelper dbHelper;
     private SQLiteDatabase  database;
@@ -49,22 +47,13 @@ public class ItemsListActivity_4 extends AppCompatActivity
         dbHelper = new DataBaseSqlHelper(this);
 
         try
-        {
-            dbHelper.updateDataBase();
-
-        }
+        { dbHelper.updateDataBase(); }
         catch (IOException mIOException)
-        {
-            throw new Error("UnableToUpdateDatabase");
-        }
+        { throw new Error("UnableToUpdateDatabase"); }
         try
-        {
-            database = dbHelper.getWritableDatabase();
-        }
+        { database = dbHelper.getWritableDatabase(); }
         catch (SQLException mSQLException)
-        {
-            throw mSQLException;
-        }
+        { throw mSQLException; }
 
         // Database items to list
         add_to_list();
@@ -129,7 +118,6 @@ public class ItemsListActivity_4 extends AppCompatActivity
                             overridePendingTransition(R.anim.animation_activity_standart_1, R.anim.animation_activity_standart_1);
                             break;
                         }
-
                         // Chests
                         case 2:
                         {
@@ -141,7 +129,6 @@ public class ItemsListActivity_4 extends AppCompatActivity
                             overridePendingTransition(R.anim.animation_activity_standart_1, R.anim.animation_activity_standart_1);
                             break;
                         }
-
                         // Keys
                         case 3:
                         {
@@ -154,10 +141,7 @@ public class ItemsListActivity_4 extends AppCompatActivity
                             break;
                         }
                         default:
-                        {
-                            break;
-                        }
-
+                        { break; }
                     }
                 }
             });
@@ -178,7 +162,6 @@ public class ItemsListActivity_4 extends AppCompatActivity
             list_linearlay.addView(button,layoutParams);
             i++;
         }
-
         cursor_name.close();
         cursor_icon.close();
     }

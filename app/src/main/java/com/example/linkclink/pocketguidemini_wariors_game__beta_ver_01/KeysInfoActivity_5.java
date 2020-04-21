@@ -54,22 +54,13 @@ public class KeysInfoActivity_5 extends AppCompatActivity
         dbHelper = new DataBaseSqlHelper(this);
 
         try
-        {
-            dbHelper.updateDataBase();
-
-        }
+        { dbHelper.updateDataBase(); }
         catch (IOException mIOException)
-        {
-            throw new Error("UnableToUpdateDatabase");
-        }
+        { throw new Error("UnableToUpdateDatabase"); }
         try
-        {
-            database = dbHelper.getWritableDatabase();
-        }
+        { database = dbHelper.getWritableDatabase(); }
         catch (SQLException mSQLException)
-        {
-            throw mSQLException;
-        }
+        { throw mSQLException; }
 
         // Add informations to layout
         sql_data_to_info();
@@ -112,5 +103,6 @@ public class KeysInfoActivity_5 extends AppCompatActivity
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,arr_1);
         list1.setAdapter(arrayAdapter);
+        cursor_data.close();
     }
 }

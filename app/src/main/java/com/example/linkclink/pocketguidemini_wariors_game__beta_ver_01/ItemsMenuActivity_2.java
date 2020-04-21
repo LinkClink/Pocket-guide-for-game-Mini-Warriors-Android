@@ -9,7 +9,6 @@ import android.widget.Button;
 
 // Ammo type selection menu
 public class ItemsMenuActivity_2 extends AppCompatActivity
-
 {
     private Button menuitems_button_1;
     private Button menuitems_button_2;
@@ -26,7 +25,6 @@ public class ItemsMenuActivity_2 extends AppCompatActivity
     }
 
     public void onClick(View view)
-
     {
         menuitems_button_1 = (Button) findViewById(R.id.menuitems_button_1);
         menuitems_button_2 = (Button) findViewById(R.id.menuitems_button_2);
@@ -39,7 +37,6 @@ public class ItemsMenuActivity_2 extends AppCompatActivity
         if(view == menuitems_button_3) menu_chests();
         if(view == menuitems_button_4) menu_skill_items();
         if(view == menuitems_button_5) menu_money();
-
     }
 
     public void menu_weapons()
@@ -76,5 +73,4 @@ public class ItemsMenuActivity_2 extends AppCompatActivity
         startActivityForResult(intent,1);
         overridePendingTransition(R.anim.animation_activity_standart_1,R.anim.animation_activity_standart_1);
     }
-
 }

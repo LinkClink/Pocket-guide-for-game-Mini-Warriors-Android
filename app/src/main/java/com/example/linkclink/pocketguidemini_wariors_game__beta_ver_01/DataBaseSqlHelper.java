@@ -65,13 +65,9 @@ public class DataBaseSqlHelper extends SQLiteOpenHelper
             this.getReadableDatabase();
             this.close();
             try
-            {
-              copyDBFile();
-            }
+            { copyDBFile(); }
             catch (IOException mIOException)
-            {
-                throw new Error("ErrorCopyingDataBase");
-            }
+            { throw new Error("ErrorCopyingDataBase"); }
         }
     }
 
@@ -98,20 +94,15 @@ public class DataBaseSqlHelper extends SQLiteOpenHelper
     public synchronized void close()
     {
         if (mDataBase != null)
-            mDataBase.close();
+        mDataBase.close();
         super.close();
     }
 
     @Override
     public void onCreate(SQLiteDatabase db)
-    {
-
-    }
+    { }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
-    {
-        if (newVersion > oldVersion)
-            mNeedUpdate = true;
-    }
+    { if (newVersion > oldVersion) mNeedUpdate = true; }
 }

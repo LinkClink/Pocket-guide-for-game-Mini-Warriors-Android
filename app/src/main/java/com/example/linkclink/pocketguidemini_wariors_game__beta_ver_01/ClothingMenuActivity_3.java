@@ -9,7 +9,6 @@ import android.widget.Button;
 
 // Menu for choosing the ammo types
 public class ClothingMenuActivity_3 extends AppCompatActivity
-
 {
     int item_type = 1;
     String ac_request_code = "916";
