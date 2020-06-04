@@ -1,9 +1,10 @@
 
 # Project Title:
-Pocket guide for Mini Warriors 
+* Pocket guide for Mini Warriors 
 
 # Getting Started:
-You can open this project in your Android Studio also download **release.apk** and install on your smartphone.
+* You can open this project in your Android Studio also download **release.apk** and install on your smartphone.
+* Also download app [Download](https://drive.google.com/file/d/1c3zrYu3roz22dpEEgduw219p2-VJRVQ_/view?usp=sharing)
 
 # Prerequisites:
 * Android Studio [Download](https://developer.android.com/studio)
@@ -23,12 +24,7 @@ You can open this project in your Android Studio also download **release.apk** a
 
 # Authors:
 - Yevhenii Andrushchenko (LinkClink)
-
-
-**Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc**
+- Acknowledgments Hat tip to anyone whose code was used Inspiration etc
 
 
 
