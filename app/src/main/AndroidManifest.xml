@@ -22,7 +22,7 @@
         <!-- Activity Main Menu -->
         <activity
             android:name=".MainActivity_1"
-            android:screenOrientation="portrait">
+            android:screenOrientation="nosensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,37 +33,37 @@
         <!-- Button 1- Heroes menu   = -->
         <activity
             android:name=".HeroesMenuActivity_2"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="nosensor" />
 
         <!-- Button 2- items menu   = -->
         <activity
             android:name=".ItemsMenuActivity_2"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="nosensor" />
 
         <!-- Button 2 to step 1 - weapons menu -->
         <activity
             android:name=".WeaponsMenuActivity_3"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="nosensor" />
 
         <!-- Button 2 to step 1 to step 1-5 - items list list -->
         <activity
             android:name=".ItemsListActivity_4"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="nosensor" />
 
         <!-- Button 5 - credits info -->
         <activity
             android:name=".CreditsInfoActivity_2"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="nosensor" />
 
         <!-- Button 2 to step 2 to step 1-5 - weapons list -->
         <activity
             android:name=".ClothingMenuActivity_3"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="nosensor" />
 
         <!-- Button 2 to step 1-2 to step 1-5 and anything -->
         <activity
             android:name=".BasedInfoActivity_5"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="nosensor" />
 
         <!-- Button 2 to step 3 -->
 
@@ -71,33 +71,33 @@
         <!-- Button 2 step 3 step 1 -->
         <activity
             android:name=".ChestsInfoActivity_5"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="nosensor" />
 
         <!-- Button 2 step 3 step 2 -->
         <activity
             android:name=".KeysInfoActivity_5"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="nosensor" />
 
         <!-- Button 2 step 4 step 1 -->
         <activity
             android:name=".SkillsItemsMenuActivity_3"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="nosensor" />
 
         <!-- Button 2 step 5 -->
         <activity
             android:name=".MoneyInfoActivity_3"
-            android:screenOrientation="portrait">
+            android:screenOrientation="nosensor">
         </activity>
 
 
         <!-- Button 2 step 3 -->
         <activity
             android:name=".ChestsMenuActivity_3"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="nosensor" />
 
         <activity
             android:name=".HeroesListActivity_4"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="nosensor" />
 
         <meta-data
             android:name="preloaded_fonts"
