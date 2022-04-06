@@ -13,6 +13,11 @@ The application is based on the mobile game Mini Warriors, it contains a collect
 # Prerequisites:
 * Android Studio [Download](https://developer.android.com/studio)
 
+# Requirements for version android:
+- Minimum required Android version: Android [Lollipop](https://en.wikipedia.org/wiki/Android_Lollipop) 5x (SDK 21)
+- Recommended Android version: Android [Pie](https://en.wikipedia.org/wiki/Android_Pie) 9 (SDK 28)
+
+
 # Running the tests:
 .<img src="https://pp.userapi.com/c855236/v855236950/611ae/oNuujpMY4cQ.jpg" width="300">
 <img src="https://pp.userapi.com/c850328/v850328950/166d8d/57R_pzYYWZM.jpg" width="300">
