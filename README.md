@@ -2,9 +2,13 @@
 # Project Title:
 * Pocket guide for Mini Warriors 
 
+# Description: 
+The application is based on the mobile game Mini Warriors, it contains a collection of items present in the game, as well as events.
+
+
 # Getting Started:
-* You can open this project in your Android Studio also download **release.apk** and install on your smartphone.
-* Also download app [Download](https://drive.google.com/file/d/1c3zrYu3roz22dpEEgduw219p2-VJRVQ_/view?usp=sharing)
+* You can open this project in your Android Studio also download release.apk and install it on your smartphone.
+* Also, download the app here [Download](https://drive.google.com/file/d/1c3zrYu3roz22dpEEgduw219p2-VJRVQ_/view?usp=sharing)
 
 # Prerequisites:
 * Android Studio [Download](https://developer.android.com/studio)
@@ -17,18 +21,16 @@
 <img src="https://pp.userapi.com/c853520/v853520950/66539/093QnApX3AQ.jpg" width="300">
 <img src="https://pp.userapi.com/c849124/v849124950/1b3a88/CyvkHxMuqa0.jpg" width="300">
 
-## Built With:
+## Technologies used:
 * XML
 * Java 9
-* SQLlite
+* SQLite
+* Gradle
+* JUnit4
+* AppCompat
 
 # Authors:
 - Yevhenii Andrushchenko (LinkClink)
-- Acknowledgments Hat tip to anyone whose code was used Inspiration etc
-
-
-
-
 
 
 
